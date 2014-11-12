@@ -1,0 +1,22 @@
+﻿.css-starBackgroundIn {
+    background: url('../image/Foreground.png') 5% 5%, url('../image/Midground.png') 20% 20%, url('../image/Background.png') 90% 110%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    transition: left 300s linear;
+    -ms-transition: left 300s linear;
+    -webkit-transition: left 300s linear;
+    -moz-transition: left 300s linear;
+    -o-transition: left 300s linear;
+}
+
+.css-starBackgroundOut:target .css-starBackgroundIn {
+    left: -5000px;
+}
+
+.css-starBackgroundOut:hover .css-starBackgroundIn {
+    left: -9999px;
+}
